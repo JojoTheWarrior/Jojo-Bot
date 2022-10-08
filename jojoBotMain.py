@@ -18,7 +18,7 @@ from jojoEnglishNumber import toWord
 from jojoHelp import listCommands
 import re
 
-TOKEN = "OTY4MzczODQ4NjA3MTg3MDA1.GVPgY-.AhYqX6iovyFp0NVJO9gxXccygeJOrD108bc4e0"
+TOKEN = "[redacted]"
 bot = commands.Bot(command_prefix='', intents=discord.Intents.all())
 client = discord.Client(intents=discord.Intents.all())
 
