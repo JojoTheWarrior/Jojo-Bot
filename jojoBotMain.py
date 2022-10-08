@@ -60,18 +60,10 @@ sunSHour2 = sunsetTime[0]
 sunSMin2 = sunsetTime[1]
 
 memberIdentifications = {
-    "Justin": 969408908273811476,
-    "Avery Lee": 490636564909522965,
-    "Joshua": 969433849195024394,
-    "Nirvan": 776879034842742815,
-    "Antonio": 892219565390594108,
-    "Brian": 911391692123410432,
-    "Luka": 326116423556530187
 }
 
 memberIdentificationsList = [
-    969408908273811476, 490636564909522965, 969433849195024394, 776879034842742815, 892219565390594108,
-    911391692123410432, 569703366909886502, 724786341946195990, 822607717738348584
+
 ]
 
 # tic tac toe
@@ -87,6 +79,7 @@ ticTacToePlayers = {}
 # sarcastic typer
 chadTalk = []
 
+# eight ball
 eightBallAnswers = [
     "Definitely",
     "Maybe?",
@@ -102,8 +95,6 @@ eightBallAnswers = [
 ]
 
 theBiggest = 10
-henryWins = 0
-beQuietForASec = False
 
 
 @bot.event
@@ -125,23 +116,6 @@ async def removeName(x):
 async def on_message(message):
     global theBiggest
     global beQuietForASec
-    global henryWins
-
-    # fun command for silencing people
-    if message.author.id == 665613286636650557:
-        if message.content == "jojo silencer mode":
-            if not beQuietForASec:
-                beQuietForASec = True
-                embedVar = discord.Embed(title="You got it, boss", description="Silencer Mode: Enabled",
-                                         color=0x230B5C)
-                await message.channel.send(embed=embedVar)
-                await bot.process_commands(message)
-            else:
-                beQuietForASec = False
-                embedVar = discord.Embed(title="You got it, boss", description="Silencer Mode: Disabled",
-                                         color=0x230B5C)
-                await message.channel.send(embed=embedVar)
-                await bot.process_commands(message)
 
     # test command
     if beQuietForASec and message.author.id in memberIdentificationsList:
