@@ -1,5 +1,5 @@
 # Jojo-Bot
-Contains versions and separate files of the Jojo Bot - Python Discord Bot Project.
+As every programmer started off somewhere, this Discord bot was my first program. I originally made it to learn more Python and explore the Discord.py Class, but I got a bit carried away and turned it into more of a games and niche utilities Discord bot. The Jojo-Bot was created 10/12/2020.
 
 09/07/22
 Today is the first day of my log, obviously things happened before, I just did not write them down. This program was written in PyCharm, and it was moved around a few times so I don't have a good record of its origins. I would consider myself to be pretty fluent in Python, but only really in a competitive coding sense, as the actual Object Oriented Programming, utilities, organizers, etc. cannot be taught, I have to learn those from experience.
